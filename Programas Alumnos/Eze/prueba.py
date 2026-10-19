@@ -95,7 +95,54 @@ Cantidad=len (Palabra)
 print(Cantidad)
 
 """
+"""
+variable1=int(input("Introduce el primer numero: "))
+variable2=int(input("Introduce el segundo numero: "))
+if variable1==variable2:
+    print("Son iguales")
+elif variable1 != variable2:
+    print("Son distintos")
+"""
+"""
+#---Ejemplo: La merienda---
+print("Me voy a la cocina")
+print("Abro la cocina")
 
+hay_leche = input("Hay leche? (s/n): ")
+hay_chocolate = input("Hay chocolate? (s/n): ")
+
+if hay_leche != "s" or hay_chocolate != "s":
+    print("Voy hasta el super")
+    if hay_leche != "s":
+        print("Compro leche")
+    if hay_chocolate != "s":
+        print("Compro chocolate")
+
+print("Ponemos la leche en el vaso")
+print("Ponemos el chocolate en el vaso")
+print("Mezclamos")
+
+"""
+"""
+print("---BIENVENIDO A LA MONTAÑA RUSA---")
+#pedimos los datos
+edad = int(input("Dime tu edad: "))
+altura = int(input("Dime tu altura en centimetros: "))
+vip = input("Tienes pase VIP? (S/N): ")
+
+#Bloque 1: 'if' independientes (les sirve para el Ejercicio 1)
+if altura>170:
+    print ("Aviso del guardia: Cuidado con la cabeza en los tuneles.")
+
+if edad==80:
+    print ("Aviso del guardia: ¡Felicidades! Los centenarios entran gratis.")
+
+#Bloque 2: 'if / else' compuesto (les sirve para el ejercicio 2)
+if (edad>=12 and altura>=130) or (vip=="S"):
+    print ("¡Puedes subir a la atraccion! Que te diviertas.")
+else:
+    print("Lo siento, por seguridad no cumples con los requisitos para subir.")
+"""
 
 
 
