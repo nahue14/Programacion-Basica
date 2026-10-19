@@ -1,5 +1,6 @@
 print ("---Castillo del dragon---")
 
+nombre_jugador = input("Ingresa tu nombre de jugador: ")
 nivel = int(input("Ingresa tu nivel: "))
 puntos_de_vida= int(input("Ingresa tus puntos de vida: "))
 llave_magica_secreta= input("Tienes llave secreta? S/N: ")
