@@ -114,7 +114,7 @@ print("mezclamos")"""
 
 #------------------------------------------------
 
-print("---- Bienvenidos a la montaña rusa ----")
+"""print("---- Bienvenidos a la montaña rusa ----")
 #pedimos los datos al usuario
 edad = int(input("Por favor, ingresa tu edad: "))
 altura = int(input("Por favor, ingresa tu altura en centimetros: "))
@@ -126,4 +126,16 @@ if edad == 80:
     print("Aviso del guardia: felicidades! los centenarios entran gratis")
 #Bloque 2: 'if / else' compuesto (les sirve para el ejercicio 2)
 if (edad >= 12 and altura >= 130) or (vip == "s"):
-    print("los siento, por seguridad no cumples con los requisitos para subir")
+else:
+    print("los siento, por seguridad no cumples con los requisitos para subir")"""
+
+#------------------------------------------
+
+#teenemos nuestra caja de herramientas especial al azar
+import random
+print ("agitando dados...")
+print("tirando sobre la mesa...")
+#usamos la herramienta randint () de la libreria random
+dado1 = random.randint(1,6)
+dado2 = random.randint(1,6)
+print ("salieron el {} y el {}!".format(dado1,dado2))
