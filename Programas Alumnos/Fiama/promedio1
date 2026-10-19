@@ -1,0 +1,13 @@
+"""Hacer promedio de tres variables, imprimir el resultado por pantalla. 
+Ademas, imprimir de manera logica si a aprobo o no (Resultado <= 6). Resultado True o False"""
+
+n1 = 7
+n2 = 8
+n3 = 6
+
+promedio = (n1 + n2 + n3) / 3
+
+if promedio >= 6:
+    print ("True")  
+else:
+     print ("False")
