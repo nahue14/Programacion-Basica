@@ -131,11 +131,23 @@ else:
 
 #------------------------------------------
 
-#teenemos nuestra caja de herramientas especial al azar
+"""#teenemos nuestra caja de herramientas especial al azar
 import random
 print ("agitando dados...")
 print("tirando sobre la mesa...")
 #usamos la herramienta randint () de la libreria random
 dado1 = random.randint(1,6)
 dado2 = random.randint(1,6)
-print ("salieron el {} y el {}!".format(dado1,dado2))
+print ("salieron el {} y el {}!".format(dado1,dado2))"""
+
+#-----------------------------------------------------
+
+#tenemos nuestra caja de herramientas especial al azar
+import random
+print ("ENCONTRASTE UN COFRE DEL TESORO!")
+print ("Abriendo el cofre viejo...")
+print("Revisando el interior...")
+#usamos la herramienta randint () de la libreria random
+monedas_oro = random.randint(50,500)
+diamantes = random.randint(1,5)
+print ("Felicidades! Econtraste {} monedad de oro y {} diamantes brillantes!".format(monedas_oro,diamantes))
