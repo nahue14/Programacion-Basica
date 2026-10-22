@@ -133,7 +133,7 @@ else:
 
 """#teenemos nuestra caja de herramientas especial al azar
 import random
-print ("agitando dados...")
+print("agitando dados...")
 print("tirando sobre la mesa...")
 #usamos la herramienta randint () de la libreria random
 dado1 = random.randint(1,6)
@@ -142,12 +142,27 @@ print ("salieron el {} y el {}!".format(dado1,dado2))"""
 
 #-----------------------------------------------------
 
-#tenemos nuestra caja de herramientas especial al azar
+"""#tenemos nuestra caja de herramientas especial al azar
 import random
-print ("ENCONTRASTE UN COFRE DEL TESORO!")
-print ("Abriendo el cofre viejo...")
+print("ENCONTRASTE UN COFRE DEL TESORO!")
+print("Abriendo el cofre viejo...")
 print("Revisando el interior...")
 #usamos la herramienta randint () de la libreria random
 monedas_oro = random.randint(50,500)
 diamantes = random.randint(1,5)
-print ("Felicidades! Econtraste {} monedad de oro y {} diamantes brillantes!".format(monedas_oro,diamantes))
+print ("Felicidades! Econtraste {} monedad de oro y {} diamantes brillantes!".format(monedas_oro,diamantes))"""
+
+#--------------------------------------------------------
+
+puntaje = int(input("Ingresa tu puntaje del examen (1 al 100): "))
+
+if puntaje >= 90:
+    print("Excelente, tu nota es una A.")
+elif puntaje >= 80:
+    print("Muy bien, tu nota es una B.")
+elif puntaje >= 70:
+    print("Bien, tu nota es una C.")
+elif puntaje >= 60:
+    print("Aprobaste raspando, tu nota es una D.")
+else:
+    print("Has reprobado, tu nota es una F.")
