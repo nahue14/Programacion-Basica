@@ -11,7 +11,21 @@ Nivel_arma = int(input("Nivel de tu arma: "))
 Magic = input("¿Utilizas magia? (S/N): ")
 
 if Magic == "S":
-     S = input("¿Cual es tu magia? (Fuego, Agua, Tierra, Aire, Trueno, Luz, Oscuridad): ")
+    S = input("¿Cual es tu magia? (Fuego, Agua, Tierra, Aire, Trueno, Luz, Oscuridad): ")
+    if S == "Oscuridad":
+        print("¡Cuidado! La magia de la Oscuridad es muy poderosa, pero el Dragón del Inframundo es inmune a ella.")
+    elif S == "Luz":
+        print("¡Genial! La magia de la Luz tiene +100% de damage contra el Dragón del Inframundo.")
+    elif S == "Fuego":
+        print("¡Atento! La magia de Fuego tiene -50% de damage contra el Dragón del Inframundo.")
+    elif S == "Agua":
+        print("¡Atento! La magia de Agua tiene +200% de damage contra el Dragón del Inframundo.")
+    elif S == "Tierra":
+             print("¡Atento! La magia de Tierra tiene -10% de damage contra el Dragón del Inframundo.")
+    elif S == "Aire":
+             print("¡Atento! La magia de Aire tiene +25% de damage contra el Dragón del Inframundo.")
+    elif S == "Trueno":
+              print("¡Atento! La magia de Trueno tiene +50% de damage contra el Dragón del Inframundo.")
 
 if vida <= 20:
     print("¡Peligrooooo! Tienes poca vida, curate y vuelve a intentarlo")
@@ -22,20 +36,7 @@ if nivel == 99:
 if Nivel_arma >= 50:
     print("Tu arma conoce bien la guerra, pero no te confies ¡el dragón es muy fuerte y puede matarte!.")
 
-if S == "Oscuridad":
-    print("¡Cuidado! La magia de la Oscuridad es muy poderosa, pero el Dragón del Inframundo es inmune a ella.")
-elif S == "Luz":
-    print("¡Genial! La magia de la Luz tiene +100% de damage contra el Dragón del Inframundo.")
-elif S == "Fuego":
-    print("¡Atento! La magia de Fuego tiene -50% de damage contra el Dragón del Inframundo.")
-elif S == "Agua":
-    print("¡Atento! La magia de Agua tiene +200% de damage contra el Dragón del Inframundo.")
-elif S == "Tierra":
-    print("¡Atento! La magia de Tierra tiene -10% de damage contra el Dragón del Inframundo.")
-elif S == "Aire":
-    print("¡Atento! La magia de Aire tiene +25% de damage contra el Dragón del Inframundo.")
-elif S == "Trueno":
-    print("¡Atento! La magia de Trueno tiene +50% de damage contra el Dragón del Inframundo.")
+
 
 if nivel >= 50:
     print("Haz batallado lo suficiente, adentrate en el sofocante CASTLE OF THE DRAGÓN y consigue muchas recompensas estupendas.")
