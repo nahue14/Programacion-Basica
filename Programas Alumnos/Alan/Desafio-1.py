@@ -11,21 +11,23 @@ Nivel_arma = int(input("Nivel de tu arma: "))
 Magic = input("¿Utilizas magia? (S/N): ")
 
 if Magic == "S":
-    S = input("¿Cual es tu magia? (Fuego, Agua, Tierra, Aire, Trueno, Luz, Oscuridad): ")
-    if S == "Oscuridad":
+    Magia = input("¿Cual es tu magia? (Fuego, Agua, Tierra, Aire, Trueno, Luz, Oscuridad): ")
+    if Magia == "Oscuridad":
         print("¡Cuidado! La magia de la Oscuridad es muy poderosa, pero el Dragón del Inframundo es inmune a ella.")
-    elif S == "Luz":
+    elif Magia == "Luz":
         print("¡Genial! La magia de la Luz tiene +100% de damage contra el Dragón del Inframundo.")
-    elif S == "Fuego":
+    elif Magia == "Fuego":
         print("¡Atento! La magia de Fuego tiene -50% de damage contra el Dragón del Inframundo.")
-    elif S == "Agua":
+    elif Magia == "Agua":
         print("¡Atento! La magia de Agua tiene +200% de damage contra el Dragón del Inframundo.")
-    elif S == "Tierra":
+    elif Magia == "Tierra":
              print("¡Atento! La magia de Tierra tiene -10% de damage contra el Dragón del Inframundo.")
-    elif S == "Aire":
+    elif Magia == "Aire":
              print("¡Atento! La magia de Aire tiene +25% de damage contra el Dragón del Inframundo.")
-    elif S == "Trueno":
+    elif Magia == "Trueno":
               print("¡Atento! La magia de Trueno tiene +50% de damage contra el Dragón del Inframundo.")
+    else:
+         print("Eso no es una Magia... ¡Ten cuidado con lo que dices!")
 
 if vida <= 20:
     print("¡Peligrooooo! Tienes poca vida, curate y vuelve a intentarlo")
