@@ -154,7 +154,7 @@ print ("Felicidades! Econtraste {} monedad de oro y {} diamantes brillantes!".fo
 
 #--------------------------------------------------------
 
-puntaje = int(input("Ingresa tu puntaje del examen (1 al 100): "))
+"""puntaje = int(input("Ingresa tu puntaje del examen (1 al 100): "))
 
 if puntaje >= 90:
     print("Excelente, tu nota es una A.")
@@ -165,4 +165,18 @@ elif puntaje >= 70:
 elif puntaje >= 60:
     print("Aprobaste raspando, tu nota es una D.")
 else:
-    print("Has reprobado, tu nota es una F.")
+    print("Has reprobado, tu nota es una F.")"""
+
+#----------------------------------------------------------------------
+
+prin("--- Sist de seg sectreto ---")
+#1 pedimos la contraseña por 1ra vez
+password = input("ingresa la contraseña para entrar: ")
+#2 el guardia 'while' revisa si esta MAL
+# mientras sea distinta (!=) a "python123", te deja atrapado.
+while password != "python123":
+    print("Acceso denegado! Contra incorrecta!")
+    #LA LLAVE PARA SALIR: volver a preguntar dentro del bucle
+    #si nos olvidamos esta linea, es un bucle infinito
+    password = input("vuelve a intentarlo: ")
+    
