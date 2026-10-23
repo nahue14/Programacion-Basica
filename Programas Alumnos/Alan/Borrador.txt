@@ -1,0 +1,8 @@
+#BORRADOR: Archivador.
+
+print("Bienvenido al sistema de Archivo +L")
+print()
+Orden= int(input("ingresa el numero de O.P. :  "))
+
+
+
