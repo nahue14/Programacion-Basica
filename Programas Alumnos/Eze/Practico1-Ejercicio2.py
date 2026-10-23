@@ -1,0 +1,5 @@
+Primer_numero=int(input("Introduce un primer numero: "))
+Segundo_numero=int(input("Introduce un segundo numero: "))
+print("La suma es:",Primer_numero+Segundo_numero)
+print("La resta es:", Primer_numero-Segundo_numero)
+print("El resultado final es:", ((Primer_numero+Segundo_numero)*2))
