@@ -1,0 +1,15 @@
+Info necesaria para la base de datos.
+
+Por un lado, bloque CLIENTES
+Por orto lado, bloque EQUIPOS
+
+
+Definir Datos CLIENTES
+Nombre
+Apellido
+DNI
+Teléfono de contacto / Whatsapp
+mail
+
+Definir Datos EQUIPOS
+
