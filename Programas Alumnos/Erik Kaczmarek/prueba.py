@@ -169,7 +169,7 @@ else:
 
 #----------------------------------------------------------------------
 
-prin("--- Sist de seg sectreto ---")
+"""print("--- Sist de seg sectreto ---")
 #1 pedimos la contraseña por 1ra vez
 password = input("ingresa la contraseña para entrar: ")
 #2 el guardia 'while' revisa si esta MAL
@@ -179,4 +179,19 @@ while password != "python123":
     #LA LLAVE PARA SALIR: volver a preguntar dentro del bucle
     #si nos olvidamos esta linea, es un bucle infinito
     password = input("vuelve a intentarlo: ")
-    
+#3 si llegamos a esta linea, significa que logró escapar de while
+print("Acceso concedido! Bienvenido al sistema.")"""
+
+#-----------------------------------------------------------------------
+
+import random
+
+numero_secreto = random.randint(1, 10)
+
+numero_jugador = int(input("Adivina el número del 1 al 10: "))
+
+while numero_jugador != numero_secreto:
+    print("Te equivocaste, intenta de nuevo.")
+    numero_jugador = int(input("Ingresa otro número: "))
+
+print("¡Felicidades! Adivinaste, el número era {}.".format (numero_secreto))
