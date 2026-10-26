@@ -7,5 +7,6 @@ IMC = peso / (altura ** 2)
 print("Tu indice de masa corporal es: {}".format(IMC))
 if IMC < 25:
     print("Tu peso es saludable")
+    #print("{}".format(IMC < 25))
 else IMC >= 25:
     print("Tu peso no es saludable")
