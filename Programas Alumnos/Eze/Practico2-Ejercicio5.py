@@ -21,22 +21,22 @@ else:
     exit()
 
 Pregunta2 = input("Como sos en una reuinion social? OPCION A - Hablas con todos | OPCION B - Te mantenes al margen | OPCION C - Depende del dia: ")
-if Pregunta1 == "A":
+if Pregunta2 == "A":
     Puntuacion = Puntuacion + A
-elif Pregunta1 == "B":
+elif Pregunta2 == "B":
     Puntuacion = Puntuacion + B
-elif Pregunta1 == "C":
+elif Pregunta2 == "C":
     Puntuacion = Puntuacion + C
 else:
     print("Las opciones posibles son A, B o C")
     exit()
 
 Pregunta3 = input("Como actuas en una discusion? OPCION A - Defendes tu postura | OPCION B - Evitas el conflicto | OPCION C - Buscas un acuerdo: ")
-if Pregunta1 == "A":
+if Pregunta3 == "A":
     Puntuacion = Puntuacion + A
-elif Pregunta1 == "B":
+elif Pregunta3 == "B":
     Puntuacion = Puntuacion + B
-elif Pregunta1 == "C":
+elif Pregunta3 == "C":
     Puntuacion = Puntuacion + C
 else:
     print("Las opciones posibles son A, B o C")
