@@ -97,23 +97,52 @@ else :
 
 print("conclusion : {}".format(mensaje))"""
 # ejercicio 12 -------------------------------------------------------------------------------------------------------------------
-print( "                      Bienvenido al juego                  ")
+"""print( "                      Bienvenido al juego                  ")
+import random
 choice = input("elige (A) o (B): ")
-
-if choice == "A" :
-    print("puerta roja, carmesi")
-    choice = input(" (A) o (B)")
-    if choice == "A" :
-        print("encuentras cofre carmesi, obtienes espada carmesi, sigues avanzando o sales?")
-        """if choice == "A" :
-            print("aparecio un enemigo! jabali carmesi")
-            if choice == "A" : 
-                print(" derrotaste jabali carmesi ¡felicidades subes de nivel!")
-elif choice == "B":
+objeto = True
+quest = random.randint(1,6)
+if choice == "A":
     print("puerta verde")
-     elif choice == "B":
-        print("encontraste cofre del bosque, obtienes baculo naturaleza, sigues avanzando o te quedas?")
+    choice = input("A o B: ")
+    if choice == "A":
+        print("encuentras un cofre verde, dentro habia una espada verde, sigues avanzando?")
+        choice = input("(A) o (B): ")
+        if choice == "A" and objeto == True:
+            print("derrotas un slime y subes de nivel")
         elif choice == "B":
-            print(" aparecio un slime!")
-            elif choice == "B":
-                print(" derrotaste al slime, subes de nivel!")"""
+            print("tomas un atajo y te encuentras un mago enemigo, te dice que adivines un numero para sobrevivir")
+            jugador = int(input("tu numero:"))
+            if jugador == quest :
+                print("ganaste")
+            else: 
+                print("fin del juego")
+
+    elif choice =="B":
+        print("avanzas por un camino y te derrotan")
+elif choice == "B":
+    print("no entras a la mazmorra")"""
+#ejercicio 13 --------------------------------------------------------------------------------------------------------------------------
+"""kilometraje = int(input("numero enter: "))
+if kilometraje <= 300 :
+    monto = 500
+else: 
+    excedente = kilometraje - 300
+    if kilometraje <= 1000:
+        monto = 500 + 3 * excedente
+    else: 
+        monto = 500 + 1.5 * excedente
+
+print("el importe a pagar es {}".format(monto))"""
+# ejercicio 6 -----------------------------------------------------------------------------------------------------------------------------------
+print( "  CONVERSOR DE MONEDA        ")
+dolar_euro = 0,90
+peso_dolar = 1.535,52
+libra_euro = 1,20
+dolar_yen = 157,53
+operacion = input("que desea hacer? (A) dolar,euro (B) peso,dolar (C) libra_euro (D) dolar_yen: ")
+if operacion == "A":
+    monto = int(input("tu monto: "))
+    final = (dolar_euro * monto)
+    final_final = final
+    print("monto final {}".format(final_final) )
