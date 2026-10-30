@@ -135,7 +135,7 @@ else:
 
 print("el importe a pagar es {}".format(monto))"""
 # ejercicio 6 -----------------------------------------------------------------------------------------------------------------------------------
-print( "  CONVERSOR DE MONEDA        ")
+"""print( "  CONVERSOR DE MONEDA        ")
 dolar_euro = 0,90
 peso_dolar = 1.535,52
 libra_euro = 1,20
@@ -145,4 +145,21 @@ if operacion == "A":
     monto = int(input("tu monto: "))
     final = (dolar_euro * monto)
     final_final = final
-    print("monto final {}".format(final_final) )
+    print("monto final {}".format(final_final) )"""
+# ejercicio 14 ---------------------------------------------------------------------------------------------------------------------------------------------------
+print(" batalla pokemon")
+import randint
+pikachu = 80
+squirtle = 90
+while pikachu > 0 and squirtle > 0 :
+    ataque = random.randint(1,2)
+    if ataque == 1 :
+        squirtle -=11
+        print("pikachu usa bola voltio, squirtle pierde 10 hp")
+    elif ataque == 2 :
+        squirtle -=11
+        print("pikachu usa trueno, squirtle pierde 11 hp")
+        print(squirtle)
+turno_jugador = input("(P),(A),(B)")
+while turno_jugador != "P" and turno_jugador !="A" and turno_jugador !="B":
+    turno_jugador = input("(P),(A),(B)")
