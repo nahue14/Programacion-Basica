@@ -154,7 +154,7 @@ squirtle = 90
 while pikachu > 0 and squirtle > 0 :
     ataque = random.randint(1,2)
     if ataque == 1 :
-        squirtle -=11
+        squirtle -=10
         print("pikachu usa bola voltio, squirtle pierde 10 hp")
     elif ataque == 2 :
         squirtle -=11
@@ -163,13 +163,13 @@ print(squirtle)
 turno_jugador = input("(P),(A),(B): ")
 while turno_jugador != "P" and turno_jugador !="A" and turno_jugador !="B":
     turno_jugador = input("(P),(A),(B): ")
-    if turno_jugador == "A":
+if turno_jugador == "A":
         pikachu -=10
         print("squirtle usa hidropulso, pikachu pierde 10 hp")
-    elif turno_jugador == "B":
+elif turno_jugador == "B":
         pikachu -=11
         print("squirtle usa hidrobomba, pikachu pierde 11 hp")
-    elif turno_jugador == "P":
+elif turno_jugador == "P":
         pikachu -=5
         print("squirtle usa patada, pikachu pierde 5 hp")
 print(pikachu) 
