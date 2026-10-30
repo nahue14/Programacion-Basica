@@ -146,9 +146,9 @@ if operacion == "A":
     final = (dolar_euro * monto)
     final_final = final
     print("monto final {}".format(final_final) )"""
-# ejercicio 14 ---------------------------------------------------------------------------------------------------------------------------------------------------
+# ejercicio 14 -----------------------------------------------------------------------------------------------------------------------------------------------
 print(" batalla pokemon")
-import randint
+import random
 pikachu = 80
 squirtle = 90
 while pikachu > 0 and squirtle > 0 :
@@ -159,7 +159,17 @@ while pikachu > 0 and squirtle > 0 :
     elif ataque == 2 :
         squirtle -=11
         print("pikachu usa trueno, squirtle pierde 11 hp")
-        print(squirtle)
-turno_jugador = input("(P),(A),(B)")
+print(squirtle)
+turno_jugador = input("(P),(A),(B): ")
 while turno_jugador != "P" and turno_jugador !="A" and turno_jugador !="B":
-    turno_jugador = input("(P),(A),(B)")
+    turno_jugador = input("(P),(A),(B): ")
+    if turno_jugador == "A":
+        pikachu -=10
+        print("squirtle usa hidropulso, pikachu pierde 10 hp")
+    elif turno_jugador == "B":
+        pikachu -=11
+        print("squirtle usa hidrobomba, pikachu pierde 11 hp")
+    elif turno_jugador == "P":
+        pikachu -=5
+        print("squirtle usa patada, pikachu pierde 5 hp")
+print(pikachu) 
